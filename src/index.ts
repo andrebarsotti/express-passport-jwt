@@ -15,7 +15,7 @@ app.use(bodyParser.json());
 app.use(auth.initialize())
 
 app.get('/', (req, res) => res.send(""));
-app.get('/login', loginController)
+app.post('/login', loginController)
 app.get('/profile', auth.authenticate(), ListarProfilesController);
 
 app.listen(PORT, () => {
