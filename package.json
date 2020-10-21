@@ -7,53 +7,30 @@
     "license": "ICS",
     "private": true,
     "scripts": {
-        "start": "node app/",
+        "start": "ts-node src/",
         "debug": "nodemon",
-        "test": "nyc -c mocha",
-        "test-watch": "mocha -w",
-        "build": "gulp clean+build",
         "lint": "eslint --ext .js,.jsx,.ts,.tsx ./"
     },
+    "dependencies": {
+        "express": "^4.17.1",
+        "passport": "^0.4.1",
+        "passport-jwt": "^4.0.0",
+        "ts-node": "^9.0.0",
+        "tslog": "^2.9.1"
+    },
     "devDependencies": {
-        "@types/chai": "^4.2.11",
-        "@types/faker": "^4.1.12",
-        "@types/mocha": "^7.0.2",
+        "@types/express": "^4.17.8",
+        "@types/lowdb": "^1.0.9",
         "@types/node": "^14.0.5",
-        "@types/sinon": "^9.0.4",
+        "@types/passport": "^1.0.4",
+        "@types/passport-jwt": "^3.0.3",
         "@typescript-eslint/eslint-plugin": "^2.34.0",
         "@typescript-eslint/parser": "^2.34.0",
-        "chai": "^4.2.0",
-        "del": "^5.1.0",
         "eslint": "^6.0.0",
-        "faker": "^4.1.0",
-        "gulp": "^4.0.2",
-        "gulp-typescript": "^6.0.0-alpha.1",
-        "mocha": "^7.1.2",
-        "nyc": "^15.0.1",
-        "sinon": "^9.0.2",
-        "ts-node": "^8.10.1",
+        "nodemon": "^2.0.6",
         "typescript": "^3.9.3"
     },
     "peerdependencies": {
         "ts-lib": "0.0.5"
-    },
-    "nyc": {
-        "require": [
-            "ts-node/register"
-        ],
-        "extension": [
-            ".ts"
-        ],
-        "exclude": [
-            "**/*.d.ts",
-            "coverage",
-            "app",
-            "tests"
-        ],
-        "reporter": [
-            "html",
-            "text"
-        ],
-        "all": true
     }
 }
