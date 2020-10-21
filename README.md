@@ -26,4 +26,4 @@ Utilizando o *PostMan* ou um interface similar:
   }
   ~~~
 
-2. Para validar faça um get na página [http://localhost:8080/profile](http://localhost:8080/profile) passando o token com um header *Authorization = Bearer <token>*
+2. Para validar faça um get na página [http://localhost:8080/profile](http://localhost:8080/profile) passando o token com um header *Authorization = Bearer **token***
