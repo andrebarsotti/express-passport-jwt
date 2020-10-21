@@ -1,12 +1,18 @@
-import express  from 'express';
+import express from 'express';
+import bodyParser from 'body-parser';
 import { Logger } from 'tslog';
+import { env } from 'process';
+import { ListarProfilesController } from './controllers/listarProfileController';
 
 const log = new Logger();
 const app = express();
-const PORT = 8080;
+const PORT = env["PORT"];
+
+app.use(bodyParser.json());
 
 app.get('/', (req, res) => res.send(""));
+app.get('/profile', ListarProfilesController);
 
 app.listen(PORT, () => {
-  log.info(`Serviço em execução na porta ${PORT}`)
+  log.info(`Site em execução na porta ${PORT}`)
 });

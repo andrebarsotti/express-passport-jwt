@@ -6,3 +6,5 @@ app
 coverage
 # excluir gulpfile.
 gulpfile.js
+#scripts
+/scripts
