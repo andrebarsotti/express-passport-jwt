@@ -1,4 +1,4 @@
-# Projeto para o estudo e validação Jwt para uma API em Express puro escrita em TypeScript
+# Estudo de validação Jwt em Express
 
 Para executar o projeto:
 
