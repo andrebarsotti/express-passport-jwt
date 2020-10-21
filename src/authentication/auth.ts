@@ -13,6 +13,7 @@ export class Auth {
   }
   private repo = new UsuarioRepository();
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   private strategy = new Strategy(this.params, (payload: any, done: VerifiedCallback) => {
     this.log.debug(`Validando o usuário ${payload.userName}`)
     const usuario = this.repo.obterUsuarioPorUserId(payload.userName);
@@ -30,6 +31,7 @@ export class Auth {
     return passport.initialize();
   }
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   authenticate(): any {
     return passport.authenticate("jwt", { session: false });
   }
