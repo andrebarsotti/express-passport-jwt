@@ -20,7 +20,7 @@ export class Auth {
     if (usuario) 
       return done(null, payload);
     else
-      return done(new Error('User not found'), null);
+      return done(null, false);
   });
 
   constructor() {

@@ -9,7 +9,7 @@
     "scripts": {
         "start": "nodemon",
         "lint": "eslint --ext .js,.jsx,.ts,.tsx ./",
-        "gerar-db": "node scripts/criar-usuario.js"
+        "gerar-db": "node scripts/criar-usuarios.js"
     },
     "dependencies": {
         "body-parser": "^1.19.0",
