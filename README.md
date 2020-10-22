@@ -31,6 +31,9 @@ Utilizando o *PostMan* ou um interface similar:
 ## Referências
 
 JSCRAMBLER, *API para Autenticar usuários com JWT e Passport*, Acessado em 19-10-2020 [link](https://tableless.com.br/autenticar-usuarios-com-jwt-e-passport/)
+
 PASSPORTJS, *passport-jwt*, Acessado em 19-10-2020 [link](http://www.passportjs.org/packages/passport-jwt/)
+
 EXPRESS, *Exemplo Hello World*, Acessado em 19-10-2020  [link](https://expressjs.com/pt-br/starter/hello-world.html)
+
 TYPICODE, *Lowdb*, Acessado em 19-10-2020  [link](https://github.com/typicode/lowdb)
